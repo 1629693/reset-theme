@@ -1,0 +1,7 @@
+name = Reset
+description = only meant to be a base theame
+core= 7.x
+
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/system.menus.css
+stylesheets[all][] = css/system.theme.css
