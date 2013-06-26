@@ -2,18 +2,13 @@
  * @file
  * Styles for system messages.
  */
-div.messages {
-  background-position: 8px 8px;
-  /* LTR */
-  background-repeat: no-repeat;
+.messages {
   border: 1px solid;
   margin: 6px 0;
-  padding: 10px 10px 10px 50px;
-  /* LTR */
+  padding: 10px;
 }
 
-div.status {
-  background-image: url(../../misc/message-24-ok.png);
+.status {
   border-color: #be7;
 }
 
@@ -22,51 +17,24 @@ div.status,
   color: #234600;
 }
 
-div.status,
-table tr.ok {
+.status,
+tr.ok {
   background-color: #f8fff0;
 }
 
-div.warning {
-  background-image: url(../../misc/message-24-warning.png);
-  border-color: #ed5;
-}
-
-div.warning,
 .warning {
+  border-color: #ed5;
   color: #840;
-}
-
-div.warning,
-table tr.warning {
   background-color: #fffce5;
 }
 
-div.error {
-  background-image: url(../../misc/message-24-error.png);
-  border-color: #ed541d;
-}
-
-div.error,
 .error {
+  border-color: #ed541d;
   color: #8c2e0b;
-}
-
-div.error,
-table tr.error {
   background-color: #fef5f1;
-}
-
-div.error p.error {
   color: #333;
 }
 
-div.messages ul {
-  margin: 0 0 0 1em;
-  /* LTR */
+.messages ul {
   padding: 0;
-}
-
-div.messages ul li {
-  list-style-image: none;
 }

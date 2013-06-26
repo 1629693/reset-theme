@@ -1,0 +1,16 @@
+.htaccess
+
+# Cache specific files.
+cache/
+.sass-cache
+
+# Temporary folder
+/tmp
+
+# Netbeans
+/nbproject
+
+# Unnecessary metadata files
+.DS_Store
+Thumbs.db
+desktop.ini
