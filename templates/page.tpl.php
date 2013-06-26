@@ -122,7 +122,7 @@
 
     <div id="main-wrapper"><div id="main">
 
-      <div id="content" class="column">
+      <div id="content">
         <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
@@ -136,13 +136,13 @@
       </div> <!-- /#content -->
 
       <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar">
+        <div id="sidebar-first"
           <?php print render($page['sidebar_first']); ?>
         </div> <!-- /#sidebar-first -->
       <?php endif; ?>
 
       <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar">
+        <div id="sidebar-second">
           <?php print render($page['sidebar_second']); ?>
        </div> <!-- /#sidebar-second -->
       <?php endif; ?>
