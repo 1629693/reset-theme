@@ -231,3 +231,12 @@ th.checkbox {
 .progress .filled {
   background: dodgerblue;
 }
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
