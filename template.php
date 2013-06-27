@@ -10,3 +10,12 @@ function reset_preprocess_page(&$variables) {
   $variables['main_menu'] = theme_get_setting('toggle_main_menu') ? menu_tree(variable_get('menu_main_links_source', 'main-menu')) : '';
   $variables['secondary_menu'] = theme_get_setting('toggle_secondary_menu') ? menu_tree(variable_get('menu_secondary_links_source', 'user-menu')) : '';
 }
+
+
+/**
+ * Display a view as a grid style.
+ */
+function reset_preprocess_views_view_grid(&$vars) {
+  drupal_add_css(drupal_get_path('theme', 'reset') . '/css/views-view-grid.css');
+}
+

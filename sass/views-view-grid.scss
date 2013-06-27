@@ -1,0 +1,9 @@
+.views-view-grid {
+  display:table;
+  > .row {
+    display:table-row;
+    > .col {
+      display:table-cell;
+    }
+  }
+}
