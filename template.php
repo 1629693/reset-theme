@@ -7,6 +7,6 @@ function reset_preprocess_page(&$variables) {
     $variables['feed_icons'] = '';
   }
 
-  $variables['main_menu'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
-  $variables['secondary_menu'] = menu_tree(variable_get('menu_secondary_links_source', 'user-menu'));
+  $variables['main_menu'] = theme_get_setting('toggle_main_menu') ? menu_tree(variable_get('menu_main_links_source', 'main-menu')) : '';
+  $variables['secondary_menu'] = theme_get_setting('toggle_secondary_menu') ? menu_tree(variable_get('menu_secondary_links_source', 'user-menu')) : '';
 }
