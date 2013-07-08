@@ -1,9 +1,22 @@
+$max-columns:18;
+
 .views-view-grid {
-  display:table;
+  text-align:justify;
   > .row {
-    display:table-row;
+    &:after {
+      content:' ';
+      display: inline-block;
+      width:100%;
+    }
     > .col {
-      display:table-cell;
+      vertical-align:top;
+      display:inline-block;
+    }
+  }
+  @for $i from 1 through $max-columns {
+    &.cols-#{$i} .col {
+      width: 90% / $i;
     }
   }
 }
+
