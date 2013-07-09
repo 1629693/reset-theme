@@ -14,7 +14,7 @@ $max-columns:18;
   }
 }
 
-@for $i from 1 through $max-columns {
+@for $i from 2 through $max-columns {
   .has-#{$i}-cols > .col {
     width: 90% / $i;
   }

@@ -12,10 +12,6 @@
   text-align: start;
 }
 
-.has-1-cols > .col {
-  width: 90%;
-}
-
 .has-2-cols > .col {
   width: 45%;
 }
