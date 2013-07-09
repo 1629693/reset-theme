@@ -17,5 +17,7 @@ function reset_preprocess_page(&$variables) {
  */
 function reset_preprocess_views_view_grid(&$vars) {
   drupal_add_css(drupal_get_path('theme', 'reset') . '/css/views-view-grid.css');
+  foreach (element_children($vars['row_classes']) as $key => $value) {
+    $vars['row_classes'][$key] .= 'view-grid-row has-' . $vars['options']['columns'] . '-cols';
+  }
 }
-

@@ -16,7 +16,7 @@
 <?php if (!empty($caption)) : ?>
   <h2><?php print $caption; ?></h2>
 <?php endif; ?>
-<div class=" <?php print $class; ?>"<?php print $attributes; ?>>
+<div class="<?php print $class; ?>"<?php print $attributes; ?>>
 <?php foreach ($rows as $row_number => $columns): ?>
   <div <?php print 'class="row ' . $row_classes[$row_number] .'"'; ?>>
     <?php foreach ($columns as $column_number => $item): ?>
