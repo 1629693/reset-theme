@@ -149,8 +149,10 @@
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
-    <div id="footer">
-      <?php print render($page['footer']); ?>
-    </div> <!-- /#footer -->
-
+    <?php if ($page['footer']): ?>
+      <div id="footer">
+        <?php print render($page['footer']); ?>
+      </div> <!-- /#footer -->
+    <?php endif; ?>
+    
   </div></div> <!-- /#page, /#page-wrapper -->
