@@ -1,6 +1,6 @@
 name = Reset
-description = only meant to be a base theame
-core= 7.x
+description = Painless and clean base theme.
+core = 7.x
 
 stylesheets[all][] = css/base.css
 stylesheets[all][] = css/system.base.css
