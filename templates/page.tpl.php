@@ -136,7 +136,7 @@
       </div> <!-- /#content -->
 
       <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first"
+        <div id="sidebar-first">
           <?php print render($page['sidebar_first']); ?>
         </div> <!-- /#sidebar-first -->
       <?php endif; ?>
